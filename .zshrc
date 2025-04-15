@@ -17,4 +17,4 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 # Подсветка текста как в VSCode
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# Я просто добавлю эту строку здесь, для того что бы запуллить ее в гит
+# Я просто добавлю эту строку здесь, для того что бы ЗАПУШИТЬ ее в гит
