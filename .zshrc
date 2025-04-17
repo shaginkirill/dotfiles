@@ -18,7 +18,3 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Я просто добавлю эту строку здесь, для того что бы ЗАПУШИТЬ ее в гит
-
-# added in future/prompt branch
-
-
