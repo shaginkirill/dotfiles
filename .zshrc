@@ -18,3 +18,12 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Я просто добавлю эту строку здесь, для того что бы ЗАПУШИТЬ ее в гит
+
+# Alias для GitHub 
+
+alias gs='git status'
+alias gsw='git switch'
+alias ga='git add .'
+alias gc='git commit -m'
+alias gp='git push'
+alias glog='git log --oneline --graph --all'
