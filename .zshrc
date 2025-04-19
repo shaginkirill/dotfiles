@@ -2,7 +2,7 @@
 
 # Цветной prompt (имя пользователя, имя машины, путь)
 autoload -Uz colors && colors
-PROMPT="%F{cyan}%n@%m %F{yellow}%~%f %F "
+PROMPT='%F{cyan}%n@%m %F{yellow}%~%f %(#.#.%%) '
 
 # Включаем расширенное автодополнение с меню 
 autoload -Uz compinit
