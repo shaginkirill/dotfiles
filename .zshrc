@@ -23,3 +23,7 @@ alias gc='git commit -m'
 alias gp='git push'
 alias glog='git log --oneline --graph --all'
 
+#Возвращение английского вывода в Starship
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+
