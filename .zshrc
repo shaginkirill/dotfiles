@@ -1,8 +1,8 @@
 # Цветной prompt (имя пользователя, имя машины, путь)
 autoload -Uz colors && colors
 
-#Подключается строка приветсявия starship
-eval "$(starship init zsh)"
+#Подключается строка приветсявия 
+PROMPT='%F{cyan}%n@%m %F{yellow}%~%f %F{magenta}$(git rev-parse --abbrev-ref HEAD 2>/dev/null)%f %(#.#.%%) '
 
 # Включаем расширенное автодополнение с меню 
 autoload -Uz compinit
