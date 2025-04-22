@@ -1,8 +1,13 @@
 # Цветной prompt (имя пользователя, имя машины, путь)
 autoload -Uz colors && colors
 
-#Подключается строка приветсявия 
-PROMPT='%F{cyan}%n@%m %F{yellow}%~%f %F{magenta}$(git rev-parse --abbrev-ref HEAD 2>/dev/null)%f %(#.#.%%) '
+# Функйция показывающая в промпте отредактированные файлы
+git_dirty() {
+  [[ -n $(git status --porcelain 2>/dev/null) ]] && echo "*"
+}
+
+# Подключается строка приветсявия 
+PROMPT='%F{cyan}%n@%m %F{yellow}%~%f %F{magenta}$(git rev-parse --abbrev-ref HEAD 2>/dev/null)$(git_dirty)%f %(#.#.%%) '
 
 # Включаем расширенное автодополнение с меню 
 autoload -Uz compinit
@@ -27,3 +32,4 @@ alias glog='git log --oneline --graph --all'
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
+# test
